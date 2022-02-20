@@ -1,1 +1,143 @@
-# programs1
+public class Main {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 1; j <= i; j++) {
+    System.out.print(j+" ");
+   }
+   System.out.println("");
+  }
+ }
+}
+
+public class Pyramid02 {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 1; j <= i; j++) {
+    System.out.print(i+" ");
+   }
+   System.out.println("");
+  }
+ }
+}
+
+
+public class Main {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 1; j <= i; j++) {
+    System.out.print("* ");
+   }
+   System.out.println("");
+  }
+ }
+}
+
+
+public class Main {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 4; j >= i; j--) {
+    System.out.print("* ");
+   }
+   System.out.println("");
+  }
+ }
+}
+
+public class Main {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 1; j <= 4; j++) {
+    if(i<=j){
+     System.out.print("* ");
+    }else{
+     System.out.print("  ");
+    }
+   }
+   System.out.println("");
+  }
+ }
+}
+
+
+
+
+
+8
+88
+888
+8888
+
+8888
+888
+88
+8
+
+9999
+ 999
+  99
+   9
+
+   9
+  99
+ 999
+9999
+
+
+
+public class Main {
+ public static void main(String[] args) {
+  for (int i = 1; i <= 4; i++) {
+   for (int j = 4; j >= 1; j--) {
+    if(i>=j){
+     System.out.print("* ");
+    }else{
+     System.out.print("  ");
+    }
+   }
+   System.out.println("");
+  }
+ }
+}
+
+
+
+
+
+
+// prg to print table of any number
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter any number");
+  int num=sc.nextInt();
+  for(int i=1;i<=10;i++){
+   System.out.println(num+" * "+i+" = "+(num*i));
+  }
+ }
+}
+
+
+
+/*  prg. to check palindrome number  */
+import java.util.Scanner;
+public class PalindromeNumber {
+ public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter any number");
+  int num = sc.nextInt();
+  int originalNum=num;
+  int revNum=0;
+  while(num>0){
+   int d = num%10;
+   revNum = revNum*10+d;
+   num=num/10;
+  }
+  if(originalNum==revNum){
+   System.out.println(originalNum+ " is a palindrome");
+  }else{
+   System.out.println(originalNum+ " is not a palindrome");
+  }
+ }
+}
