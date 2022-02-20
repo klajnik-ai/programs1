@@ -173,3 +173,24 @@ public class Main
          System.out.println("\n" +num+ " is not a Prime Number.");
    }
 }
+
+
+
+/*  prg. to do sum of the digits of any number  */
+import java.util.Scanner;
+
+public class SumDigits {
+
+ public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter any number");
+  int num = sc.nextInt();
+  int s=0;
+  while(num>0){
+   int d = num%10;
+   s = s+d;
+   num=num/10;
+  }
+  System.out.println(s);
+ }
+}
